@@ -1,5 +1,1 @@
-2025-03-25: Kick off accessibility mobile app project
-2025-04-08: Built home UI optimized for assistive tech
-2025-04-22: Integrated speech feedback engine
-2025-05-06: Improved accessibility audit results
-2025-05-20: Added localization and screen reader tags
+2025-03-25: Set up project infrastructure with accessibility configs
