@@ -1,3 +1,4 @@
 2025-03-25: Initialize accessibility-focused mobile app project
 2025-03-26: Design home screen layout for screen reader users
 2025-03-27: Implement high-contrast theme support
+2025-03-28: Add text-to-speech integration
