@@ -2,3 +2,4 @@
 2025-03-26: Design home screen layout for screen reader users
 2025-03-27: Implement high-contrast theme support
 2025-03-28: Add text-to-speech integration
+2025-03-29: Improve keyboard navigation for disabled users
