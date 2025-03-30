@@ -4,3 +4,4 @@
 2025-03-28: Add text-to-speech integration
 2025-03-29: Improve keyboard navigation for disabled users
 2025-03-30: Fix layout scaling for vision-impaired users
+2025-03-31: Integrate sign language video resources
