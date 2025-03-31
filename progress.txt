@@ -5,3 +5,4 @@
 2025-03-29: Integrate gesture shortcuts for mobility-impaired users
 2025-03-30: Implement contrast ratio checks in theme manager
 2025-03-31: Add closed captioning to tutorial video components
+2025-04-01: Support simplified layout mode for cognitive accessibility
