@@ -8,3 +8,4 @@
 2025-04-01: Support simplified layout mode for cognitive accessibility
 2025-04-02: Implement vibration feedback for navigation errors
 2025-04-03: Include metadata tagging for accessibility APIs
+2025-04-04: Replace non-semantic elements with ARIA-compliant tags
