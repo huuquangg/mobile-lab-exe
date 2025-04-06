@@ -11,3 +11,4 @@
 2025-04-04: Replace non-semantic elements with ARIA-compliant tags
 2025-04-05: Introduce accessibility-focused design tokens
 2025-04-06: Add content warnings with accessible dismiss buttons
+2025-04-07: Support one-handed mode for larger devices
