@@ -12,3 +12,4 @@
 2025-04-05: Introduce accessibility-focused design tokens
 2025-04-06: Add content warnings with accessible dismiss buttons
 2025-04-07: Support one-handed mode for larger devices
+2025-04-08: Add accessibility test coverage to CI builds
