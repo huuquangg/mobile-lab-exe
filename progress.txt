@@ -14,3 +14,4 @@
 2025-04-07: Support one-handed mode for larger devices
 2025-04-08: Add accessibility test coverage to CI builds
 2025-04-09: Create fallback text descriptions for animation-heavy components
+2025-04-10: Set up project infrastructure with accessibility configs
