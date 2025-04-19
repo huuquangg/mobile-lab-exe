@@ -24,3 +24,4 @@
 2025-04-17: Setup CI/CD pipeline for faster testing
 2025-04-18: Finalize features for accessibility MVP release
 2025-04-19: Update README with accessibility features overview
+2025-04-20: Fix bug in alternative text rendering
