@@ -27,3 +27,4 @@
 2025-04-20: Fix bug in alternative text rendering
 2025-04-21: Add caption support to all embedded videos
 2025-04-22: Refine haptic feedback for accessibility gestures
+2025-04-23: Finish milestone for disability-accessible release
