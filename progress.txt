@@ -36,3 +36,4 @@
 2025-04-29: Fix layout scaling for vision-impaired users
 2025-04-30: Integrate sign language video resources
 2025-05-01: Create onboarding flow with accessibility options
+2025-05-02: Add voice command support using ML Kit
