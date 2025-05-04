@@ -39,3 +39,4 @@
 2025-05-02: Add voice command support using ML Kit
 2025-05-03: Enhance button accessibility with larger hit targets
 2025-05-04: Refactor code for better maintainability
+2025-05-05: Conduct basic accessibility audit on core UI
