@@ -42,3 +42,4 @@
 2025-05-05: Conduct basic accessibility audit on core UI
 2025-05-06: Add screen reader labels for navigation elements
 2025-05-07: Implement user feedback form for accessibility needs
+2025-05-08: Support dynamic font sizing
