@@ -44,3 +44,4 @@
 2025-05-07: Implement user feedback form for accessibility needs
 2025-05-08: Support dynamic font sizing
 2025-05-09: Optimize app performance for low-end devices
+2025-05-10: Update privacy policy to address disability support
