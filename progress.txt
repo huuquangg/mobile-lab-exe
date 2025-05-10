@@ -45,3 +45,4 @@
 2025-05-08: Support dynamic font sizing
 2025-05-09: Optimize app performance for low-end devices
 2025-05-10: Update privacy policy to address disability support
+2025-05-11: Fix screen rotation bugs affecting accessibility
