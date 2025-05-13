@@ -48,3 +48,4 @@
 2025-05-11: Fix screen rotation bugs affecting accessibility
 2025-05-12: Localize app content for multiple languages
 2025-05-13: Test compatibility with external assistive devices
+2025-05-14: Add ARIA roles and accessibility metadata
