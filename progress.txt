@@ -51,3 +51,4 @@
 2025-05-14: Add ARIA roles and accessibility metadata
 2025-05-15: Deploy early beta for visually impaired users
 2025-05-16: Improve voice feedback timing in app interactions
+2025-05-17: Setup CI/CD pipeline for faster testing
