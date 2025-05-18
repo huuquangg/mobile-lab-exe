@@ -53,3 +53,4 @@
 2025-05-16: Improve voice feedback timing in app interactions
 2025-05-17: Setup CI/CD pipeline for faster testing
 2025-05-18: Finalize features for accessibility MVP release
+2025-05-19: Update README with accessibility features overview
