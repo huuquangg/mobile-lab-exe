@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.project.NoLogin"></activity>
+        <activity
+            android:name="com.example.project.forgot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.project.FeedBack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.project.PersonalProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.project.SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.project.Conversation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.project.EventEdit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.project.Calendar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.project.Login"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.project.AddEvent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.project.Homepage"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.example.project.AlertReceiver" />
+        <receiver
+            android:name="com.example.project.StartUpReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.example.project.MyFirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_name" />
+
+        <activity
+            android:name="com.example.project.PlacesList"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.example.project.TripInformation" android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.project.HomeMaps"
+            android:screenOrientation="portrait"
+            android:label="HomeMaps"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2745058629265457~2908255396"/>
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAPHzvsopJtGbRNLe9_h4NYIKg41d6M5Q0" />
+
+        <activity
+            android:name="com.example.project.SearchPlaces"
+            android:label="SearchPlaces"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

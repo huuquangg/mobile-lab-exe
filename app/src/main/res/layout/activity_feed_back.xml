@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#1388DC"
+    tools:context="com.example.project.FeedBack">
+
+    <TextView
+        android:id="@+id/feedbackHeader"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#1388DC"
+        android:text="HÒM THƯ GÓP Ý"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        android:textSize="30dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:background="@android:color/transparent"
+        android:text=" Tên"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:hint=" Họ và tên"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:background="@android:color/transparent"
+        android:text=" Địa chỉ"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:hint=" Vị trí"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:background="@android:color/transparent"
+        android:text=" Mô tả"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:gravity="start|top"
+        android:hint=" Ý kiến góp ý"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/send"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ripple"
+        android:onClick="submitForm"
+        android:text="Gửi"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hoặc"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <Button
+        android:id="@+id/callUs"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ripple"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:paddingVertical="12dp"
+        android:onClick="callUs"
+        android:text="Liên hệ"
+        android:textColor="@color/white"
+        android:contentDescription="Contact Us Button"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

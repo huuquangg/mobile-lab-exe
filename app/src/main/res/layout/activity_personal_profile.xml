@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="#1388DC"
+    android:orientation="vertical"
+    tools:context="com.example.project.PersonalProfile">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:background="#1388DC"
+        android:text="Hồ sơ cá nhân"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:labelFor="@id/name"
+        android:id="@+id/textName"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:background="@android:color/transparent"
+        android:text="  Tên"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textName"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:labelFor="@id/university_ID"
+        android:id="@+id/EditTextID"
+        android:layout_below="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:background="@android:color/transparent"
+        android:text="  MSSV/CCCD"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/university_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextID"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:labelFor="@id/Phone_Number"
+        android:id="@+id/EditTextPhone"
+        android:layout_below="@id/university_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:background="@android:color/transparent"
+        android:text="  Số Điện Thoại"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/Phone_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextPhone"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:labelFor="@id/spinner1"
+        android:id="@+id/textView1"
+        android:layout_below="@id/Phone_Number"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Loại Khiếm khuyết"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/DisabilityType"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/spinner1"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:inputType="text"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_below="@id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:labelFor="@id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/degree"
+        android:layout_below="@id/Phone_Number"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Mức độ"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+    <Spinner
+        android:layout_alignParentLeft="true"
+        android:id="@+id/spinner2"
+        android:layout_below="@id/degree"
+        android:layout_marginLeft="30dp"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:labelFor="@id/spinner3"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:background="@android:color/transparent"
+        android:text=" Giới tính"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_below="@id/textViewGender"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:labelFor="@id/ageEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner2"
+        android:layout_marginLeft="50dp"
+        android:background="@android:color/transparent"
+        android:text=" Tuổi"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewAge"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:digits="0123456789"
+        android:inputType="phone"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/save"
+        android:layout_below="@id/spinner3"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple"
+        android:onClick="save"
+        android:text="Xác nhận" />
+</RelativeLayout>

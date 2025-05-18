@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1388DC"
+    tools:context="com.example.project.forgot">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        app:srcCompat="@drawable/a1" />
+
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="30dp"
+        android:background="#FFFFFF"
+        android:drawableEnd="@drawable/person"
+        android:hint="  E-mail"
+        android:inputType="text"
+        android:textColorHint="#1D1616"
+        android:textSize="15dp"
+        tools:ignore="HardcodedText,SpUsage,TextFields,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1284b8"
+        android:onClick="reset"
+        android:text="Recover your password"
+        android:textColor="#ffffff"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
