@@ -2,3 +2,4 @@
 2025-04-08: Built home UI optimized for assistive tech
 2025-04-22: Integrated speech feedback engine
 2025-05-06: Improved accessibility audit results
+2025-05-20: Added localization and screen reader tags
