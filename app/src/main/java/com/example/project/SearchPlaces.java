@@ -91,7 +91,7 @@ public class SearchPlaces extends AppCompatActivity implements OnMapReadyCallbac
     private SpeechRecognizer speechRecognizer;
     private Location mLastKnownLocation;
     private MaterialSearchBar materialSearchBar;
-    private String LANGUAGE = "Ar";
+    private String LANGUAGE = "Vn";
 
     // helper attributes
     Runnable runnable;
@@ -127,12 +127,12 @@ public class SearchPlaces extends AppCompatActivity implements OnMapReadyCallbac
         screenReaderMicBtn = findViewById(R.id.Microphone);
 
         // translate to Arabic in case lanugage is Arabic
-        if(loadData().equals("Ar")){
-            goToButton.setText("أذهب إلى");
-            buildingsButton.setText("مباني الجامعة");
-            materialSearchBar.setHint("إبحث عن مكان");
-            materialSearchBar.setPlaceHolder("إبحث عن مكان");
-            screenReaderBackBtn.setContentDescription("الرجوع");
+        if(loadData().equals("Vn")){
+            goToButton.setText("Đi đến");
+            buildingsButton.setText("Tòa nhà trường đại học");
+            materialSearchBar.setHint("Tìm địa điểm");
+            materialSearchBar.setPlaceHolder("Tìm một nơi");
+            screenReaderBackBtn.setContentDescription("Mặt sau");
         }
 
 
@@ -151,8 +151,8 @@ public class SearchPlaces extends AppCompatActivity implements OnMapReadyCallbac
         screenReaderMicBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (loadData().equals("Ar")) {
-                    if (screenReaderMicBtn.getContentDescription().equals("الحذف")) {
+                if (loadData().equals("Vn")) {
+                    if (screenReaderMicBtn.getContentDescription().equals("Xóa bỏ")) {
                         materialSearchBar.setText("");
                     } else if (screenReaderMicBtn.getContentDescription().equals("Microphone")) {
                         openVoiceRecognizer();
@@ -204,8 +204,8 @@ public class SearchPlaces extends AppCompatActivity implements OnMapReadyCallbac
                 if(s.equals("enabled")){
                     screenReaderBackBtn.setEnabled(true);
 
-                    if(loadData().equals("Ar")){
-                        screenReaderMicBtn.setContentDescription("الحذف");
+                    if(loadData().equals("Vn")){
+                        screenReaderMicBtn.setContentDescription("Xóa bỏ");
                     }
                     else {
                         screenReaderMicBtn.setContentDescription("Delete");
@@ -329,23 +329,23 @@ public class SearchPlaces extends AppCompatActivity implements OnMapReadyCallbac
                     String typeOfPlace = myString.substring(0, 1).toUpperCase() + myString.substring(1).toLowerCase();
 
                     // in case of Arabic Language translate to Arabic
-                    if (loadData().equals("Ar")) {
+                    if (loadData().equals("Vn")) {
                         if (typeOfPlace.equals("Restaurant"))
-                            typeOfPlace = "مطعم" ;
+                                typeOfPlace = "Nhà hàng" ;
                         else if (typeOfPlace.equals("Hospital"))
-                            typeOfPlace = "مستشفى" ;
+                            typeOfPlace = "Bệnh viện" ;
                         else if (typeOfPlace.equals("Parking"))
-                            typeOfPlace = "موقف" ;
+                            typeOfPlace = "Đỗ xe" ;
                         else if (typeOfPlace.equals("University"))
-                            typeOfPlace = "جامعة" ;
+                            typeOfPlace = "Trường đại học" ;
                         else if (typeOfPlace.equals("Mosque"))
-                            typeOfPlace = "مسجد" ;
+                            typeOfPlace = "Nhà thờ" ;
                         else if (typeOfPlace.equals("Cafe"))
-                            typeOfPlace = "مقهى" ;
+                            typeOfPlace = "Cà phê" ;
                         else if (typeOfPlace.equals("Atm"))
-                            typeOfPlace = "صراف آلي" ;
+                            typeOfPlace = "Cây rút tiền" ;
                         else if (typeOfPlace.equals("Library"))
-                            typeOfPlace = "مكتبة" ;
+                            typeOfPlace = "Thư viện" ;
                     }
 
 
@@ -419,8 +419,8 @@ public class SearchPlaces extends AppCompatActivity implements OnMapReadyCallbac
             layoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP, 0);
             layoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE);
             layoutParams.setMargins(0,0,30,270);
-            if(loadData().equals("Ar"))
-            locationButton.setContentDescription("مكاني");
+            if(loadData().equals("Vn"))
+            locationButton.setContentDescription("Nơi ở hiện tại");
 
         }
 
@@ -550,7 +550,7 @@ public class SearchPlaces extends AppCompatActivity implements OnMapReadyCallbac
  //when voice search is used make request and fetch suggestions list
     private void openVoiceRecognizer() {
         final Intent speechRecognizerIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-        if(loadData().equals("Ar")) {
+        if(loadData().equals("Vn")) {
             speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
             speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ar-EG");
         }
@@ -741,10 +741,10 @@ public class SearchPlaces extends AppCompatActivity implements OnMapReadyCallbac
     public void goToButton(View view){
                     LatLng currentMarkerLocation = mMap.getCameraPosition().target;
                     // redirect to google maps
-                    if (loadData().equals("Ar")) {
-                        String[] ListItems = new String[]{"سيارة", "سيرا"};
+                    if (loadData().equals("Vn")) {
+                        String[] ListItems = new String[]{"Xe hơi", "Đi bộ"};
                         new AlertDialog.Builder(SearchPlaces.this)
-                                .setTitle("اختر وسيلة النقل")
+                                .setTitle("Chọn phương tiện đi lại")
                                 .setItems(ListItems, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
                                         if (which == 0) {
@@ -828,16 +828,16 @@ public class SearchPlaces extends AppCompatActivity implements OnMapReadyCallbac
     public void BuildingsButton(View view ){
 
         ArrayList<String> buildingsNames= new ArrayList<>();
-        if (loadData().equals("Ar")) {
-            buildingsNames.add("كلية ادارة الاعمال");
-            buildingsNames.add("كلية العمارة والتخطيط");
-            buildingsNames.add("كلية علوم الأغذية والزراعة");
-            buildingsNames.add("كلية علوم الحاسب والمعلومات");
-            buildingsNames.add("كلية الهندسة");
-            buildingsNames.add("كلية العلوم مبنى 4");
-            buildingsNames.add("كلية العلوم مبنى 5");
-            buildingsNames.add("مطعم الطلاب");
-            buildingsNames.add("برنامج الوصول الشامل");
+        if (loadData().equals("Vn")) {
+            buildingsNames.add("Cao đẳng Quản trị Kinh doanh");
+            buildingsNames.add("Cao đẳng Kiến trúc và Quy hoạch");
+            buildingsNames.add("Cao đẳng Khoa học Nông nghiệp và Thực phẩm");
+            buildingsNames.add("Cao đẳng Khoa học máy tính và thông tin");
+            buildingsNames.add("Cao đẳng Kỹ thuật");
+            buildingsNames.add("Cao đẳng Khoa học 4");
+            buildingsNames.add("Cao đẳng Khoa học 5");
+            buildingsNames.add("Nhà hàng sinh viên");
+            buildingsNames.add("Chương trình tiếp cận phổ cập");
         }
         else {
             buildingsNames.add("College of Business Administration");
