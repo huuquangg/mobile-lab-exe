@@ -61,7 +61,7 @@ public class Calendar extends AppCompatActivity {
                     getBaseContext().getResources().getDisplayMetrics());
         }
         else {
-            String languageToLoad  = "ar"; // your language
+            String languageToLoad  = "Vn"; // your language
             Locale locale = new Locale(languageToLoad);
             Locale.setDefault(locale);
             Configuration config = new Configuration();
@@ -123,7 +123,7 @@ public class Calendar extends AppCompatActivity {
     }
     public String loadData() {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
-        String currentLanguage = sharedPreferences.getString(LANGUAGE, "Ar");
+        String currentLanguage = sharedPreferences.getString(LANGUAGE, "Vn");
         return currentLanguage;
     }
 }
